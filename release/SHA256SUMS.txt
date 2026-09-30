@@ -1,3 +1,3 @@
-8413a8cad6644f583441aee470b2aa625e56164ee16d854217c97d2f25ff07b5  LumiRoam-1.0.0-extension.zip
-65d619ddfe0f4896996708bde58b63c595087701dc7efdc7db4be7cce3831a86  LumiRoam-1.0.0-source.zip
+186b46a9a1bb9fabd271a0a5870e0ca3962d91d3071e82aa4e929389ec1117b5  LumiRoam-1.0.1-extension.zip
+8c31810aba997acecfa44f9beb6aee696a00c8e6b698ff47814770fa7a0aa87e  LumiRoam-1.0.1-source.zip
 61f041f48aa6db7b56db5f42f5dcb4e01636b3015bbc08f34dfcc84e5b4f8e62  LumiRoam.html

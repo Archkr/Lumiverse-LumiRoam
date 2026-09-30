@@ -1,8 +1,8 @@
 import type { InterceptorDisposer, SpindleAPI } from 'lumiverse-spindle-types';
 import { normalizeSave, normalizeScene, normalizeSettings, scenePrompt, type SceneSnapshot } from './persistence';
 
-// The 0.6.37 package's generated declarations lag its current source by the
-// document-routing overload. Lumiverse 1.2.4 implements this exact contract.
+// The published type declarations lack the document-routing overload.
+// Lumiverse 1.2.4 implements this exact contract.
 type SessionSpindleAPI = Omit<SpindleAPI, 'sendToFrontend' | 'onFrontendMessage'> & {
   sendToFrontend(payload: unknown, userId?: string, options?: { frontendSessionId?: string }): void;
   onFrontendMessage(handler: (payload: unknown, userId: string, frontendSessionId?: string) => void): () => void;

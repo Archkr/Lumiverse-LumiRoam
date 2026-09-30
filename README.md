@@ -29,11 +29,20 @@ bun run preview
 
 Open the local URL printed by the preview server. The standalone preview uses browser storage; the installed extension uses Lumiverse’s isolated storage for the signed-in user. Preview saves and Lumiverse saves are separate.
 
-## Install locally in Lumiverse
+## Install in Lumiverse
 
 Requires Lumiverse **1.2.4** or later.
 
-The prepared extension bundle in `release/LumiRoam-1.0.0-extension.zip` contains `spindle.json` and `dist/`; use **Import Local** to install it. Extract it into the backend's data directory and follow steps 3–4 below. To prepare the installation from source, follow all four steps.
+1. As the Lumiverse owner, open **Extensions**.
+2. Paste `https://github.com/Archkr/Lumiverse-LumiRoam` into **Install from Source** and install it.
+3. Enable **LumiRoam · The Lantern Isles** and grant **UI panels**.
+4. Open the **LumiRoam** sidebar tab and select **Enter the Lantern Isles**.
+
+The repository includes prepared bundles. Lumiverse installs the published development dependencies before loading those bundles; no manual build is needed.
+
+### Local installation
+
+The prepared extension bundle in `release/LumiRoam-1.0.1-extension.zip` contains `spindle.json` and `dist/`; use **Import Local** to install it. Extract it into the backend's data directory and follow steps 3–4 below. To prepare the installation from source, follow all four steps.
 
 1. Run `bun run build` in this repository.
 2. In the **backend’s data directory**, create `extensions/lumi_roam/repo/`. Copy **spindle.json** and the complete **dist/** directory into it. The prepared bundles need no package installation.
