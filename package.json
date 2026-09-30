@@ -1,0 +1,14 @@
+{
+  "name": "lumiverse-lumiroam",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The Lantern Isles: a living top-down pixel world for Lumiverse.",
+  "scripts": {
+    "build": "bun run scripts/build.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "preview": "bun run scripts/serve.ts"
+  },
+  "devDependencies": { "bun-types": "^1.3.14", "lumiverse-spindle-types": "0.6.37", "typescript": "5.9.3", "jsdom": "30.1.1", "@types/jsdom": "^21.1.7", "@napi-rs/canvas": "0.1.100" }
+}
